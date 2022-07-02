@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "18838545579",
+    "project_id": "flutter-apotheke-d1f7a",
+    "storage_bucket": "flutter-apotheke-d1f7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18838545579:android:ed95c314f91884af9c83ee",
+        "android_client_info": {
+          "package_name": "com.mycompany.flutterapotheke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18838545579-ahbuamlk1p1goch8hgk2ojq2ebkq38cd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxfekV1L-n9dFqEY1idGV7gLijc6B8bUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18838545579-ahbuamlk1p1goch8hgk2ojq2ebkq38cd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "18838545579-131pt378qfk9t3k3l2ik8o0qq5ffkkca.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.flutterapotheke"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
