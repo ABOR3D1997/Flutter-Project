@@ -1,5 +1,6 @@
 import '../apotheke_finden/apotheke_finden_widget.dart';
 import '../auth/auth_util.dart';
+import '../contact.dart';
 import '../einnahme_einfgen/einnahme_einfgen_widget.dart';
 import '../flutter_flow/flutter_flow_animations.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
@@ -12,6 +13,7 @@ import '../meine_medikamente/meine_medikamente_widget.dart';
 import '../news_kategorien/news_kategorien_widget.dart';
 import '../profile/profile_widget.dart';
 import '../rezept/rezept_widget.dart';
+import '../video_call.dart';
 import '../warenkorb/warenkorb_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -616,8 +618,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         .primaryBtnText,
                                     size: 30,
                                   ),
-                                  onPressed: () {
-                                    print('IconButton pressed ...');
+                                  onPressed: () async {
+                                    await Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => biata(),
+                                      ),
+                                    );
                                   },
                                 ),
                               ],
