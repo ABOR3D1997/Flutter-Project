@@ -1,3 +1,5 @@
+import 'package:flutter_apotheke/models/reminder.dart';
+
 import '../apotheke_finden/apotheke_finden_widget.dart';
 import '../auth/auth_util.dart';
 import '../contact.dart';
@@ -12,6 +14,7 @@ import '../medikamente_bestellen/medikamente_bestellen_widget.dart';
 import '../meine_medikamente/meine_medikamente_widget.dart';
 import '../news_kategorien/news_kategorien_widget.dart';
 import '../profile/profile_widget.dart';
+import '../reminder.dart';
 import '../rezept/rezept_widget.dart';
 import '../video_call.dart';
 import '../warenkorb/warenkorb_widget.dart';
@@ -491,6 +494,85 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           MaterialPageRoute(
                                             builder: (context) =>
                                                 WarenkorbWidget(),
+                                          ),
+                                        );
+                                      },
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(50, 20, 50, 0),
+                          child: Container(
+                            width: 100,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              color: Color(0xFF800020),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: InkWell(
+                              onTap: () async {
+                                await Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        RemeinderInterface(),
+                                  ),
+                                );
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: InkWell(
+                                      onTap: () async {
+                                        await Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                RemeinderInterface(),
+                                          ),
+                                        );
+                                      },
+                                      child: Text(
+                                        'Reminder',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyText1
+                                            .override(
+                                              fontFamily: 'Poppins',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBtnText,
+                                            ),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        30, 0, 0, 0),
+                                    child: FlutterFlowIconButton(
+                                      borderColor: Colors.transparent,
+                                      borderRadius: 30,
+                                      borderWidth: 1,
+                                      buttonSize: 60,
+                                      icon: Icon(
+                                        Icons.search,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryBtnText,
+                                        size: 30,
+                                      ),
+                                      onPressed: () async {
+                                        await Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                RemeinderInterface(),
                                           ),
                                         );
                                       },
