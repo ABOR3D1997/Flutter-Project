@@ -254,6 +254,7 @@ class Conference extends State<MyConfApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF800020),
         title: const Text('Meet'),
       ),
       body: Container(

@@ -173,7 +173,7 @@ class _State extends State<MyArtzt> {
     final createRoomButon = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
-      color: Colors.deepPurple,
+      color:  Color(0xFF800020),
       child: MaterialButton(
         // minWidth: MediaQuery.of(context).size.width / 2,
         minWidth: 100,
@@ -187,7 +187,7 @@ class _State extends State<MyArtzt> {
             createRoom();
           }
         },
-        child: Text("Create Room",
+        child: Text("Back",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.white, fontWeight: FontWeight.normal)),
@@ -197,7 +197,7 @@ class _State extends State<MyArtzt> {
     final joinButon = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
-      color: Colors.deepPurple,
+      color:  Color(0xFF800020),
       child: MaterialButton(
         minWidth: 100,
         // minWidth: MediaQuery.of(context).size.width / 2,
@@ -216,7 +216,8 @@ class _State extends State<MyArtzt> {
     );
     return Scaffold(
         appBar: AppBar(
-          title: Text('Back'),
+          backgroundColor: Color(0xFF800020),
+          title: Text('Kontackt'),
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
@@ -228,7 +229,7 @@ class _State extends State<MyArtzt> {
                     child: Text(
                       'Artzt Kontakt',
                       style: TextStyle(
-                          color: Colors.redAccent,
+                          color: Color(0xFF800020),
                           fontWeight: FontWeight.w500,
                           fontSize: 30),
                     )),
